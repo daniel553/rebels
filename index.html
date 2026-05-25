@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playeras Rebels 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f7f5f0;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1.5rem;
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: #1a1a1a;
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      font-size: 1rem;
+      color: #666;
+      letter-spacing: 0.02em;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: #d42b2b;
+      margin: 1.25rem auto 0;
+    }
+
+    .jerseys {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2.5rem 1.5rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .jersey-card {
+      flex: 1;
+      max-width: 340px;
+      min-width: 240px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e5e2dc;
+    }
+
+    .jersey-card .img-area {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: #edeae4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .jersey-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .placeholder-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .placeholder-icon {
+      width: 64px;
+      height: 64px;
+      opacity: 0.3;
+    }
+
+    .placeholder-label {
+      font-size: 0.8rem;
+      color: #999;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .jersey-info {
+      padding: 1rem 1.25rem 1.25rem;
+    }
+
+    .jersey-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.06em;
+      color: #1a1a1a;
+    }
+
+    .jersey-desc {
+      font-size: 0.875rem;
+      color: #777;
+      margin-top: 0.25rem;
+      line-height: 1.5;
+    }
+
+    .form-section {
+      max-width: 780px;
+      margin: 2rem auto 0;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .form-label {
+      text-align: center;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-wrapper {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e5e2dc;
+      overflow: hidden;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.78rem;
+      color: #bbb;
+      letter-spacing: 0.03em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Playeras Rebels 2026</h1>
+    <p>Elige tu modelo y llena el formulario</p>
+    <div class="divider"></div>
+  </header>
+
+  <section class="jerseys">
+
+    <div class="jersey-card">
+      <div class="img-area">
+        <img src="img/pink.jpeg" alt="Playera Rebels 2026 — rosa" />
+      </div>
+      <div class="jersey-info">
+        <div class="jersey-name">Rosa</div>
+        <div class="jersey-desc">Playera Rebels 2026 en tono rosa.</div>
+      </div>
+    </div>
+
+    <div class="jersey-card">
+      <div class="img-area">
+        <img src="img/black.jpeg" alt="Playera Rebels 2026 — negra" />
+      </div>
+      <div class="jersey-info">
+        <div class="jersey-name">Negra</div>
+        <div class="jersey-desc">Playera Rebels 2026 en tono negro.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="form-section">
+    <p class="form-label">Realiza tu pedido</p>
+    <div class="form-wrapper">
+      <iframe
+        src="https://airtable.com/embed/app0wnblNirhpWRAM/pagRHb7QPrhiwr2cV/form"
+        title="Formulario de pedido Playeras Rebels 2026"
+        height="900"
+      ></iframe>
+    </div>
+  </section>
+
+  <footer>Rebels 2026 &mdash; Todos los derechos reservados</footer>
+
+</body>
+</html>
