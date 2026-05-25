@@ -123,7 +123,11 @@
     .form-section {
       max-width: 780px;
       margin: 2rem auto 0;
-      padding: 0 1.5rem 3rem;
+      padding: 0 1.5rem;
+    }
+
+    .form-section:last-of-type {
+      padding-bottom: 3rem;
     }
 
     .form-label {
@@ -133,6 +137,18 @@
       text-transform: uppercase;
       color: #999;
       margin-bottom: 1.25rem;
+    }
+
+    .form-label:has(+ .form-disclaimer) {
+      margin-bottom: 0.5rem;
+    }
+
+    .form-disclaimer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 1.25rem;
+      line-height: 1.4;
     }
 
     .form-wrapper {
@@ -196,6 +212,20 @@
         src="https://airtable.com/embed/app0wnblNirhpWRAM/pagRHb7QPrhiwr2cV/form"
         title="Formulario de pedido Playeras Rebels 2026"
         height="900"
+      ></iframe>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <p class="form-label">Órdenes realizadas</p>
+    <p class="form-disclaimer">Refresca la página si no se ve tu orden</p>
+    <div class="form-wrapper">
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/app0wnblNirhpWRAM/shrCBvIOhn5KrbNx3?viewControls=on"
+        title="Órdenes Playeras Rebels 2026"
+        width="100%"
+        height="533"
       ></iframe>
     </div>
   </section>
